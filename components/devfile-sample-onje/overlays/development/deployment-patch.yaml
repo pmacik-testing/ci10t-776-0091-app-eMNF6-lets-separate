@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-onje
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0091-tenant/ci10t-776-0091-app/devfile-sample-onje@sha256:597050be6762e2c4b1db6fec6ffb480b6f2cdecf94b76c6be42fcae55242a418
+        name: my-nodejs
+        resources: {}
+status: {}
